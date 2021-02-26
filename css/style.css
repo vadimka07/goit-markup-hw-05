@@ -52,6 +52,7 @@ header {
 	display: flex;
 	align-items: center;
 	z-index: 10;
+	border-bottom: 1px solid var(--borderHeader);
 }
 header .wrapper {
 	display: flex;
@@ -87,7 +88,7 @@ header .wrapper nav {
 	color: var(--colorBlackMenu);
 	transition: 0.3s;
 	font-family: var(--ffMedium);
-	padding: 30px 0;
+	padding: 31px 0;
 	position: relative;
 }
 
@@ -151,10 +152,15 @@ main {
 }
 
 .top-banner {
-	padding: 350px 0 200px;
+	/* padding: 350px 0 200px; */
 	background: var(--bgColorTopBanner) url(../images/top-banner.jpg) no-repeat
 		top center;
 	background-size: cover;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .top-banner .button {
 	background: var(--colorButton);
